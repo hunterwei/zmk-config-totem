@@ -54,6 +54,16 @@
             bindings = <&kp GT>;
             key-positions = <19 31>;
         };
+
+        test_lh {
+            bindings = <&none>;
+            key-positions = <32 33 34>;
+        };
+
+        test_rh {
+            bindings = <&none>;
+            key-positions = <35 36 37>;
+        };
     };
 
     macros {
