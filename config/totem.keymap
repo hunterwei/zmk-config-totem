@@ -17,7 +17,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 /* Enable keymap features that require forks */
-#define HAS_MOUSE_KEYS
+//#define HAS_MOUSE_KEYS
 
 #define LYR_BASE 0
 #define LYR_NUM_VIM 1
