@@ -1,9 +1,7 @@
 // Make sure settings.dtsi is included before this file
 
 / {
-
     behaviors {
-
         /*
          * Sticky shift + Caps Word
          *
@@ -308,7 +306,6 @@
             bindings = <&kp ESCAPE>, <&kp GRAVE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
-
         };
 
         /*
