@@ -272,18 +272,48 @@
             key-positions = <RM2 RB3>;
         };
 
-        scroll_down {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&msc SCRL_DOWN>;
-            key-positions = <LT1 LT2 LT3>;
-        };
+        #ifdef HAS_MOUSE_KEYS
+            lclk_l {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&mkp LCLK>;
+                key-positions = <LM0 LM1>;
+            };
 
-        scroll_up {
-            timeout-ms = <COMBO_TERM_FAST>;
-            require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-            bindings = <&msc SCRL_UP>;
-            key-positions = <RT1 RT2 RT3>;
-        };
+            rclk_l {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&mkp RCLK>;
+                key-positions = <LT0 LT1>;
+            };
+
+            lclk_r {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&mkp LCLK>;
+                key-positions = <RM0 RM1>;
+            };
+
+            rclk_r {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&mkp RCLK>;
+                key-positions = <RT0 RT1>;
+            };
+
+            scroll_down {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&msc SCRL_DOWN>;
+                key-positions = <LT1 LT2 LT3>;
+            };
+
+            scroll_up {
+                timeout-ms = <COMBO_TERM_FAST>;
+                require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                bindings = <&msc SCRL_UP>;
+                key-positions = <RT1 RT2 RT3>;
+            };
+        #endif
     };
 };
