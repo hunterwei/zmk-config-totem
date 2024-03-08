@@ -1,0 +1,20 @@
+/ {
+    behaviors {
+        /* NumWord */
+        num_word: behavior_num_word {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            layers = <LYR_NUM_WORD>;// insert location of numbers layer here
+            continue-list = <BACKSPACE DELETE DOT MINUS COMMA SLASH COLON>;    // adjust as desired
+            ignore-numbers;// numbers don't deactivate the layer
+        };
+
+        num_vim: behavior_num_vim {
+            compatible = "zmk,behavior-caps-word";
+            #binding-cells = <0>;
+            layers = <LYR_NUM_VIM>;// insert location of numbers layer here
+            continue-list = <BACKSPACE DELETE SINGLE_QUOTE DOUBLE_QUOTES GRAVE>;    // adjust as desired
+            ignore-numbers;// numbers don't deactivate the layer
+        };
+    }
+};

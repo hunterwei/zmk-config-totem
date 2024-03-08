@@ -1,0 +1,317 @@
+#define COMBO_TERM_FAST 40
+#define COMBO_TERM_SLOW 50
+#define COMBO_PRIOR_IDLE 100
+
+/ {
+  combos {
+    compatible = "zmk,combos";
+
+    backspace {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp BACKSPACE>;
+        key-positions = <RM2 RM3>;
+    };
+
+    colon {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp COLON>;
+        key-positions = <RM3 RM4>;
+    };
+
+    single_quote {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp SINGLE_QUOTE>;
+        key-positions = <RM1 RT2>;
+    };
+
+    double_quote {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp DOUBLE_QUOTES>;
+        key-positions = <RT2 RM3>;
+    };
+
+    cmb_1 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N1>;
+        key-positions = <LT4 LM4>;
+    };
+
+    cmb_2 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N2>;
+        key-positions = <LT3 LM3>;
+    };
+
+    cmb_3 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N3>;
+        key-positions = <LT2 LM2>;
+    };
+
+    cmb_4 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N4>;
+        key-positions = <LT1 LM1>;
+    };
+
+    cmb_5 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N5>;
+        key-positions = <LT0 LM0>;
+    };
+
+    cmb_6 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N6>;
+        key-positions = <RT0 RM0>;
+    };
+
+    cmb_7 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N7>;
+        key-positions = <RT1 RM1>;
+    };
+
+    cmb_8 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N8>;
+        key-positions = <RT2 RM2>;
+    };
+
+    cmb_9 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N9>;
+        key-positions = <RT3 RM3>;
+    };
+
+    cmb_0 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp N0>;
+        key-positions = <RT4 RM4>;
+    };
+
+    left_parenthesis {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp LEFT_PARENTHESIS>;
+        key-positions = <LM1 LM2>;
+    };
+
+    right_parenthesis {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp RIGHT_PARENTHESIS>;
+        key-positions = <RM1 RM2>;
+    };
+
+    left_bracket {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp LEFT_BRACKET>;
+        key-positions = <LB1 LB2>;
+    };
+
+    right_bracket {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp RIGHT_BRACKET>;
+        key-positions = <RB1 RB2>;
+    };
+
+    left_brace {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp LEFT_BRACE>;
+        key-positions = <LT1 LT2>;
+    };
+
+    right_brace {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp RIGHT_BRACE>;
+        key-positions = <RT1 RT2>;
+    };
+
+    minus {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp MINUS>;
+        key-positions = <RT2 RT3>;
+    };
+
+    underscore {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp UNDER>;
+        key-positions = <RB2 RB3>;
+    };
+
+    plus {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp PLUS>;
+        key-positions = <LT2 LT3>;
+    };
+
+    equal {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp EQUAL>;
+        key-positions = <LB2 LB3>;
+    };
+
+    delOnLeft {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp DEL>;
+        key-positions = <LM2 LM3>;
+    };
+    
+    tg_numpad_duo {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&tog LYR_NUMPAD_DUO>;
+        key-positions = <LH0 RH0>;
+    };
+
+    bs_word {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp LC(BSPC)>;
+        key-positions = <RM1 RM2 RM3>;
+    };
+
+    del_word {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp LC(DEL)>;
+        key-positions = <LM1 LM2 LM3>;
+    };
+
+    tg_numpad_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&tog LYR_NUMPAD_L>;
+        key-positions = <LH0 LM1>;
+    };
+
+    tg_numpad_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&tog LYR_NUMPAD_R>;
+        key-positions = <RH0 RM1>;
+    };
+
+    return_base_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&to LYR_BASE>;
+        key-positions = <LH0 LH1 LH2>;
+    };
+
+    return_base_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&to LYR_BASE>;
+        key-positions = <RH0 RH1 RH2>;
+    };
+
+    bs_to_home {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&m_bs2home>;
+        key-positions = <RB1 RB2 RB3>;
+    };
+
+    del_to_end {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&m_del2end>;
+        key-positions = <LB1 LB2 LB3>;
+    };
+
+    sl_bt_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&sl LYR_BT_MACRO>;
+        key-positions = <LH1 LM1>;
+    };
+
+    sl_bt_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&sl LYR_BT_MACRO>;
+        key-positions = <RH1 RM1>;
+    };
+
+    slash2 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp SLASH>;
+        key-positions = <RB1 RM2>;
+    };
+
+    backslash2 {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&kp BACKSLASH>;
+        key-positions = <RM2 RB3>;
+    };
+
+    lclk_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&mkp LCLK>;
+        key-positions = <LM0 LM1>;
+    };
+
+    rclk_l {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&mkp RCLK>;
+        key-positions = <LT0 LT1>;
+    };
+
+    lclk_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&mkp LCLK>;
+        key-positions = <RM0 RM1>;
+    };
+
+    rclk_r {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&mkp RCLK>;
+        key-positions = <RT0 RT1>;
+    };
+
+    scroll_down {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&msc SCRL_DOWN>;
+        key-positions = <LT1 LT2 LT3>;
+    };
+
+    scroll_up {
+        timeout-ms = <COMBO_TERM_FAST>;
+        require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+        bindings = <&msc SCRL_UP>;
+        key-positions = <RT1 RT2 RT3>;
+    };
+  };
+};

@@ -1,0 +1,44 @@
+// Make sure macros.dtsi, behaviors_custom_caps_word.dtsi are included before this file
+
+/ {
+    behaviors {
+        // Left outer thumb tap for KeyPress, hold for LAYERMOD
+        lm_alt_tap: lm_alt_tap {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <350>;
+            quick-tap-ms = <500>;
+            //global-quick-tap; // no typing streak
+            //retro-tap; // don't allow slow (hold-like) taps
+
+            #binding-cells = <2>;
+            bindings = <&lm_alt>, <&kp>;
+        };
+
+        // Right outer thumb tap for NUM_WORD, hold for LAYERMOD
+        lm_gui_numvim: lm_gui_capsword {
+            compatible = "zmk,behavior-hold-tap";
+            flavor = "balanced";
+            tapping-term-ms = <350>;
+            quick-tap-ms = <500>;
+            //global-quick-tap; // no typing streak
+            //retro-tap; // don't allow slow (hold-like) taps
+
+            #binding-cells = <2>;
+            bindings = <&lm_gui>, <&num_vim>;
+        };
+
+        thumb_mo_capsword: miryoku_thumb_layer_capsword {
+            compatible = "zmk,behavior-hold-tap";
+            flavor =
+            THUMB_HOLDING_TYPE;
+            tapping-term-ms = <THUMB_HOLDING_TIME>;
+            quick-tap-ms = <THUMB_REPEAT_DECAY>; // enable repeat
+            //global-quick-tap; // no typing streak
+            //retro-tap; // don't allow slow (hold-like) taps
+
+            #binding-cells = <2>;
+            bindings = <&mo>, <&caps_word>;
+        };
+    }
+};
