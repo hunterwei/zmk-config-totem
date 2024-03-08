@@ -16,5 +16,5 @@
             continue-list = <BACKSPACE DELETE SINGLE_QUOTE DOUBLE_QUOTES GRAVE>;    // adjust as desired
             ignore-numbers;// numbers don't deactivate the layer
         };
-    }
+    };
 };

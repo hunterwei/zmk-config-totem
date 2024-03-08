@@ -40,5 +40,5 @@
             #binding-cells = <2>;
             bindings = <&mo>, <&caps_word>;
         };
-    }
+    };
 };
